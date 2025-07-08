@@ -9,6 +9,7 @@
                     <group>
                         <field name="name"/>
                         <field name="price"/>
+                        <field name="active"/>
                     </group>
                     <group>
                         <field name="suppliers_ids" widget="many2many_tags"/>
@@ -16,6 +17,36 @@
                     </group>
                 </sheet>
             </form>
+        </field>
+    </record>
+
+    <record id="view_article_list" model="ir.ui.view">
+        <field name="name">Article List</field>
+        <field name="model">article</field>
+        <field name="arch" type="xml">
+            <list string="Articles">
+                <field name="name"/>
+                <field name="active"/>
+                <field name="price"/>
+                <field name="suppliers_ids" widget="many2many_tags"/>
+                <field name="description"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="view_article_search" model="ir.ui.view">
+        <field name="name">Article Search</field>
+        <field name="model">article</field>
+        <field name="arch" type="xml">
+            <search string="Search Articles">
+                <field name="name"/>
+                <field name="price"/>
+                <field name="active"/>
+                <field name="suppliers_ids" string="Suppliers" widget="many2many_tags"/>
+                <field name="description" string="Description"/>
+                <filter name="active_filter" string="Active" domain="[('active', '=', True)]"/>
+                <filter name="inactive_filter" string="Inactive" domain="[('active', '=', False)]"/>
+            </search>
         </field>
     </record>
 </odoo>
