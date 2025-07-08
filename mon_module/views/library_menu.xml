@@ -10,6 +10,6 @@
 
     <menuitem id="menu_mon_module_article"
         name="Articles"
-        action="action_mon_module_article" />
-        parent="menu_library"
+        action="action_mon_module_article"
+        parent="menu_library" />
 </odoo>
