@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<odoo>
+    <menuitem id="menu_categories" name="Category" />
+
+        <record model="ir.actions.act_window" id="action_mon_module_category">
+            <field name="name">Article Categories</field>
+            <field name="res_model">article.category</field>
+            <field name="view_mode">list,form</field>
+        </record>
+
+    <menuitem id="menu_mon_module_category"
+        name="Categories"
+        action="action_mon_module_category"
+        parent="menu_categories" />
+</odoo>

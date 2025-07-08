@@ -1,6 +1,6 @@
 {
     'name': "Mon Module",
-    'version': '18.0.1.4',
+    'version': '18.0.2.4',
     'depends': ['base'],
     'author': "Adrienfdupont",
     'category': 'General',
@@ -9,6 +9,8 @@
     'data': [
         'views/article_menu.xml',
         'views/article_view.xml',
+        'views/category_menu.xml',
+        'views/category_view.xml',
     ],
     "license": "LGPL-3",
 }
