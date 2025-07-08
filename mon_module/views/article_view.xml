@@ -14,6 +14,7 @@
                     <group>
                         <field name="suppliers_ids" widget="many2many_tags"/>
                         <field name="description"/>
+                        <field name="category_id" />
                     </group>
                 </sheet>
             </form>
@@ -30,6 +31,7 @@
                 <field name="price"/>
                 <field name="suppliers_ids" widget="many2many_tags"/>
                 <field name="description"/>
+                <field name="category_id" />
             </list>
         </field>
     </record>
@@ -42,10 +44,9 @@
                 <field name="name"/>
                 <field name="price"/>
                 <field name="active"/>
-                <field name="suppliers_ids" string="Suppliers" widget="many2many_tags"/>
-                <field name="description" string="Description"/>
-                <filter name="active_filter" string="Active" domain="[('active', '=', True)]"/>
-                <filter name="inactive_filter" string="Inactive" domain="[('active', '=', False)]"/>
+                <field name="suppliers_ids" widget="many2many_tags"/>
+                <field name="description"/>
+                <field name="category_ids" widget="many2one"/>
             </search>
         </field>
     </record>
