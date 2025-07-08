@@ -1,6 +1,6 @@
 {
     'name': "Mon Module",
-    'version': '18.0.1.3',
+    'version': '18.0.1.4',
     'depends': ['base'],
     'author': "Adrienfdupont",
     'category': 'General',
