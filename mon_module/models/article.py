@@ -8,4 +8,4 @@ class Article(models.Model):
     suppliers_ids = fields.Many2many('res.partner', string='Suppliers', required=True)
     description = fields.Text(string='Description')
     active = fields.Boolean(string='Active', default=True)
-    category_ids = fields.Many2one(comodel_name='article.category', string='Categories')
+    category_ids = fields.Many2many(comodel_name='article.category', string='Categories')
