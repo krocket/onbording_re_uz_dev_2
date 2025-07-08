@@ -14,7 +14,7 @@
                     <group>
                         <field name="suppliers_ids" widget="many2many_tags"/>
                         <field name="description"/>
-                        <field name="category_ids" />
+                        <field name="category_ids" widget="many2many_tags"/>
                     </group>
                 </sheet>
             </form>
@@ -31,7 +31,7 @@
                 <field name="price"/>
                 <field name="suppliers_ids" widget="many2many_tags"/>
                 <field name="description"/>
-                <field name="category_ids" />
+                <field name="category_ids" widget="many2many_tags"/>
             </list>
         </field>
     </record>
