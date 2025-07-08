@@ -7,7 +7,7 @@
     'description': "Un module de gestion d'articles",
     'installable': True,
     'data': [
-        'views/library_menu.xml',
+        'views/article_menu.xml',
         'views/article_views.xml',
     ],
     "license": "LGPL-3",
