@@ -1,6 +1,6 @@
 {
     'name': "Mon Module",
-    'version': '18.0.1.1',
+    'version': '18.0.1.2',
     'depends': ['base'],
     'author': "Adrienfdupont",
     'category': 'General',
@@ -8,6 +8,7 @@
     'installable': True,
     'data': [
         'views/library_menu.xml',
+        'views/article_views.xml',
     ],
     "license": "LGPL-3",
 }

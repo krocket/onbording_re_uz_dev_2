@@ -6,4 +6,5 @@ class Article(models.Model):
     name = fields.Char(string='Name', required=True)
     price = fields.Float(string='Price', required=True)
     suppliers_ids = fields.Many2many('res.partner', string='Suppliers', required=True)
+    description = fields.Text(string='Description')
     

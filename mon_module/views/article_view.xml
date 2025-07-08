@@ -1,0 +1,19 @@
+<?xml version="1.0" ?>
+<odoo>
+    <record id="view_article_form" model="ir.ui.view">
+        <field name="name">Article Form</field>
+        <field name="model">article</field>
+        <field name="arch" type="xml">
+            <form string="Article">
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="price"/>
+                    </group>
+                    <group>
+                        <field name="suppliers_ids" widget="many2many_tags"/>
+                        <field name="description"/>
+                </sheet>
+            </form>
+        </field>
+    </record>
