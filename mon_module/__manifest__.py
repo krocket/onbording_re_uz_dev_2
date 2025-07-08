@@ -8,7 +8,7 @@
     'installable': True,
     'data': [
         'views/article_menu.xml',
-        'views/article_views.xml',
+        'views/article_view.xml',
     ],
     "license": "LGPL-3",
 }
