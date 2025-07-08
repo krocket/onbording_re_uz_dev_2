@@ -13,6 +13,7 @@
                     <group>
                         <field name="suppliers_ids" widget="many2many_tags"/>
                         <field name="description"/>
+                    </group>
                 </sheet>
             </form>
         </field>
