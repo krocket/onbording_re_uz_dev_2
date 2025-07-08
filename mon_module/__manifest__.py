@@ -9,4 +9,5 @@
     'data': [
         'views/library_menu.xml',
     ],
+    "license": "LGPL-3",
 }

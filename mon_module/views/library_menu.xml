@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <odoo>
-    <menuitem id="menu_library" name="Library" />
+    <menuitem id="menu_articles" name="Article" />
 
         <record model="ir.actions.act_window" id="action_mon_module_article">
             <field name="name">Articles</field>
@@ -11,5 +11,5 @@
     <menuitem id="menu_mon_module_article"
         name="Articles"
         action="action_mon_module_article"
-        parent="menu_library" />
+        parent="menu_articles" />
 </odoo>
