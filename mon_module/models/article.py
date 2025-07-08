@@ -7,4 +7,4 @@ class Article(models.Model):
     price = fields.Float(string='Price', required=True)
     suppliers_ids = fields.Many2many('res.partner', string='Suppliers', required=True)
     description = fields.Text(string='Description')
-    
+    active = fields.Boolean(string='Active', default=True)
