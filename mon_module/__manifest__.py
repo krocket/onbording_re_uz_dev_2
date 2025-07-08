@@ -6,4 +6,7 @@
     'category': 'General',
     'description': "Un module de gestion d'articles",
     'installable': True,
+    'data': [
+        'views/library_menu.xml',
+    ],
 }
