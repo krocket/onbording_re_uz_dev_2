@@ -13,6 +13,7 @@
         'views/category_view.xml',
         'security/library_security.xml',
         'security/ir.model.access.csv',
+        
     ],
     "license": "LGPL-3",
 }
