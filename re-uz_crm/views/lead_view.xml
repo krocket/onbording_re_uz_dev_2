@@ -4,10 +4,12 @@
         <field name="name">crm.lead.form.inherit.priority</field>
         <field name="model">crm.lead</field>
         <field name="inherit_id" ref="crm.crm_lead_view_form"/>
-        <field name="arch" type="xml">
-            <xpath expr="//sheet/group" position="inside">
-                <field name="priority"/>
-            </xpath>
-        </field>
+        <group>
+            <field name="arch" type="xml">
+                <xpath expr="//sheet/group" position="inside">
+                    <field name="priority"/>
+                </xpath>
+            </field>
+        </group>
     </record>
 </odoo>
