@@ -10,17 +10,19 @@
                 </header>
                 <sheet>
                     <group>
-                        <separator string="Main Information"/>
-                        <field name="name"/>
-                        <field name="price"/>
-                        <field name="description"/>
-                        <field name="category_ids" widget="many2many_tags"/>
-                    </group>
-                    <group>
-                        <separator string="Additional Information"/>
-                        <field name="suppliers_ids" widget="many2many_tags"/>
-                        <field name="active"/>
-                        <field name="isbn" placeholder="Enter ISBN"/>
+                        <group>
+                            <separator string="Main Information"/>
+                            <field name="name"/>
+                            <field name="price"/>
+                            <field name="description"/>
+                            <field name="category_ids" widget="many2many_tags"/>
+                        </group>
+                        <group>
+                            <separator string="Additional Information"/>
+                            <field name="suppliers_ids" widget="many2many_tags"/>
+                            <field name="active"/>
+                            <field name="isbn" placeholder="Enter ISBN"/>
+                        </group>
                     </group>
                 </sheet>
             </form>
