@@ -23,3 +23,6 @@ class Article(models.Model):
             if article.isbn and not article._check_isbn():
                 raise UserError(f"Article has an invalid ISBN: {article.isbn}")
                 
+    @api.constrains('isbn')
+    def _check_isbn_format(self):
+        self.button_check_isbn()
