@@ -5,16 +5,22 @@
         <field name="model">article</field>
         <field name="arch" type="xml">
             <form string="Article">
+                <header>
+                    <button name="button_check_isbn" type="object" string="Check ISBN"/>
+                </header>
                 <sheet>
                     <group>
+                        <separator string="Main Information"/>
                         <field name="name"/>
                         <field name="price"/>
-                        <field name="active"/>
-                    </group>
-                    <group>
-                        <field name="suppliers_ids" widget="many2many_tags"/>
                         <field name="description"/>
                         <field name="category_ids" widget="many2many_tags"/>
+                    </group>
+                    <group>
+                        <separator string="Additional Information"/>
+                        <field name="suppliers_ids" widget="many2many_tags"/>
+                        <field name="active"/>
+                        <field name="isbn" placeholder="Enter ISBN"/>
                     </group>
                 </sheet>
             </form>
@@ -32,6 +38,7 @@
                 <field name="suppliers_ids" widget="many2many_tags"/>
                 <field name="description"/>
                 <field name="category_ids" widget="many2many_tags"/>
+                <field name="isbn"/>
             </list>
         </field>
     </record>
@@ -47,6 +54,7 @@
                 <field name="suppliers_ids" />
                 <field name="description"/>
                 <field name="category_ids" />
+                <field name="isbn" string="ISBN"/>
             </search>
         </field>
     </record>
