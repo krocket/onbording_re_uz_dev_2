@@ -11,6 +11,8 @@
         'views/article_view.xml',
         'views/category_menu.xml',
         'views/category_view.xml',
+        'security/ir.model.access.csv',
+        'security/library.security.xml',
     ],
     "license": "LGPL-3",
 }
