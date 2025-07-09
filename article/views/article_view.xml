@@ -5,13 +5,9 @@
         <field name="model">article</field>
         <field name="inherit_id" ref="mon_module.view_article_form"/>
         <field name="arch" type="xml">
-            <field name="name" position="before">
-                <field name="isbn" placeholder="Enter ISBN"/>
-            </field>
+            <xpath expr="//field[@name='isbn']" position="after">
+                <field name="is_available" string="Is Available?"/>
+            </xpath>
         </field>
-
-        <xpath expr="//field[@name='isbn']" position="after">
-            <field name="is_available" string="Is Available?"/>
-        </xpath>
     </record>
 </odoo>
