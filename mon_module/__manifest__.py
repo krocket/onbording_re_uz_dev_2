@@ -1,6 +1,6 @@
 {
     'name': "Mon Module",
-    'version': '18.0.3.1',
+    'version': '18.0.3.2',
     'depends': ['base'],
     'author': "Adrienfdupont",
     'category': 'General',
@@ -11,8 +11,8 @@
         'views/article_view.xml',
         'views/category_menu.xml',
         'views/category_view.xml',
-        'security/ir.model.access.csv',
         'security/library.security.xml',
+        'security/ir.model.access.csv',
     ],
     "license": "LGPL-3",
 }
